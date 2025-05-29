@@ -27,8 +27,6 @@ metadata:
 spec:
   parentRefs:
     - name: {{ .Values.gateway.parentGateway }}
-    - group: {{ .Values.gateway.group }}
-    - kind: Gateway
   hostnames:
     - {{ .Values.gateway.hostname | quote }}
   rules:
