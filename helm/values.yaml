@@ -54,4 +54,3 @@ gateway:
   parentGateway: "eg"
   weight: 1
   path: /
-  group: "gateway.networking.k8s.io"
