@@ -26,7 +26,6 @@ metadata:
     {{- include "helm.labels" . | nindent 4 }}
 spec:
   parentRefs:
-    - kind: Gateway
     - name: {{ .Values.gateway.parentGateway }}
   hostnames:
     - {{ .Values.gateway.hostname | quote }}
